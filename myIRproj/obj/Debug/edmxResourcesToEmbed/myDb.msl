@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="IRdbModelStoreContainer" CdmEntityContainer="IRdbEntities">
+    <EntitySetMapping Name="AllPages">
+      <EntityTypeMapping TypeName="IRdbModel.AllPage">
+        <MappingFragment StoreEntitySet="AllPages">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="linkUrl" ColumnName="linkUrl" />
+          <ScalarProperty Name="mycontent" ColumnName="mycontent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

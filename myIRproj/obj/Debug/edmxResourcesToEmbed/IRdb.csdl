@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="IRdbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AllPage">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="linkUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="mycontent" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="DistinctkGramsIndex">
+    <Key>
+      <PropertyRef Name="k_gram" />
+    </Key>
+    <Property Name="k_gram" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="terms" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="DistinctSoundexIndex">
+    <Key>
+      <PropertyRef Name="soundex" />
+    </Key>
+    <Property Name="soundex" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="items" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="InvertedIndex">
+    <Key>
+      <PropertyRef Name="termID" />
+    </Key>
+    <Property Name="termID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="term" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="docID" Type="Int32" />
+    <Property Name="frequency" Type="Int32" />
+    <Property Name="positions" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="kGramIndex">
+    <Key>
+      <PropertyRef Name="k_gram" />
+    </Key>
+    <Property Name="k_gram" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="terms" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="SoundexIndex">
+    <Key>
+      <PropertyRef Name="soundex" />
+    </Key>
+    <Property Name="soundex" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="items" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityContainer Name="IRdbEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AllPages" EntityType="Self.AllPage" />
+    <EntitySet Name="DistinctkGramsIndexes" EntityType="Self.DistinctkGramsIndex" />
+    <EntitySet Name="DistinctSoundexIndexes" EntityType="Self.DistinctSoundexIndex" />
+    <EntitySet Name="InvertedIndexes" EntityType="Self.InvertedIndex" />
+    <EntitySet Name="kGramIndexes" EntityType="Self.kGramIndex" />
+    <EntitySet Name="SoundexIndexes" EntityType="Self.SoundexIndex" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+  </EntityContainer>
+</Schema>

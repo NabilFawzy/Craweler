@@ -1,0 +1,31 @@
+C:\Users\Nabil\Desktop\myIRproj\myIRproj\bin\Debug\myIRproj.exe.config
+C:\Users\Nabil\Desktop\myIRproj\myIRproj\bin\Debug\myIRproj.exe
+C:\Users\Nabil\Desktop\myIRproj\myIRproj\bin\Debug\myIRproj.pdb
+C:\Users\Nabil\Desktop\myIRproj\myIRproj\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Nabil\Desktop\myIRproj\myIRproj\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\Nabil\Desktop\myIRproj\myIRproj\obj\Debug\myIRproj.csprojResolveAssemblyReference.cache
+C:\Users\Nabil\Desktop\myIRproj\myIRproj\obj\Debug\myIRproj.Form1.resources
+C:\Users\Nabil\Desktop\myIRproj\myIRproj\obj\Debug\myIRproj.Properties.Resources.resources
+C:\Users\Nabil\Desktop\myIRproj\myIRproj\obj\Debug\myIRproj.csproj.GenerateResource.Cache
+C:\Users\Nabil\Desktop\myIRproj\myIRproj\obj\Debug\myIRproj.csproj.CoreCompileInputs.cache
+C:\Users\Nabil\Desktop\myIRproj\myIRproj\obj\Debug\myIRproj.exe
+C:\Users\Nabil\Desktop\myIRproj\myIRproj\obj\Debug\myIRproj.pdb
+C:\Users\Nabil\Desktop\myIRproj\myIRproj\bin\Debug\EntityFramework.dll
+C:\Users\Nabil\Desktop\myIRproj\myIRproj\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nabil\Desktop\myIRproj\myIRproj\bin\Debug\EntityFramework.xml
+C:\Users\Nabil\Desktop\myIRproj\myIRproj\bin\Debug\EntityFramework.SqlServer.xml
+D:\4 year\ir\crawler\myIRproj\myIRproj\bin\Debug\myIRproj.exe.config
+D:\4 year\ir\crawler\myIRproj\myIRproj\bin\Debug\myIRproj.exe
+D:\4 year\ir\crawler\myIRproj\myIRproj\bin\Debug\myIRproj.pdb
+D:\4 year\ir\crawler\myIRproj\myIRproj\bin\Debug\EntityFramework.dll
+D:\4 year\ir\crawler\myIRproj\myIRproj\bin\Debug\EntityFramework.SqlServer.dll
+D:\4 year\ir\crawler\myIRproj\myIRproj\bin\Debug\HtmlAgilityPack.dll
+D:\4 year\ir\crawler\myIRproj\myIRproj\bin\Debug\EntityFramework.xml
+D:\4 year\ir\crawler\myIRproj\myIRproj\bin\Debug\EntityFramework.SqlServer.xml
+D:\4 year\ir\crawler\myIRproj\myIRproj\bin\Debug\HtmlAgilityPack.pdb
+D:\4 year\ir\crawler\myIRproj\myIRproj\obj\Debug\myIRproj.csprojResolveAssemblyReference.cache
+D:\4 year\ir\crawler\myIRproj\myIRproj\obj\Debug\myIRproj.Form1.resources
+D:\4 year\ir\crawler\myIRproj\myIRproj\obj\Debug\myIRproj.Properties.Resources.resources
+D:\4 year\ir\crawler\myIRproj\myIRproj\obj\Debug\myIRproj.csproj.GenerateResource.Cache
+D:\4 year\ir\crawler\myIRproj\myIRproj\obj\Debug\myIRproj.exe
+D:\4 year\ir\crawler\myIRproj\myIRproj\obj\Debug\myIRproj.pdb

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="IRdbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AllPages">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="linkUrl" Type="nvarchar(max)" />
+    <Property Name="mycontent" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="DistinctkGramsIndex">
+    <Key>
+      <PropertyRef Name="k_gram" />
+    </Key>
+    <Property Name="k_gram" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="terms" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="DistinctSoundexIndex">
+    <Key>
+      <PropertyRef Name="soundex" />
+    </Key>
+    <Property Name="soundex" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="items" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="InvertedIndex">
+    <Key>
+      <PropertyRef Name="termID" />
+    </Key>
+    <Property Name="termID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="term" Type="nvarchar(max)" />
+    <Property Name="docID" Type="int" />
+    <Property Name="frequency" Type="int" />
+    <Property Name="positions" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="kGramIndex">
+    <Key>
+      <PropertyRef Name="k_gram" />
+    </Key>
+    <Property Name="k_gram" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="terms" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="SoundexIndex">
+    <Key>
+      <PropertyRef Name="soundex" />
+    </Key>
+    <Property Name="soundex" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="items" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityContainer Name="IRdbModelStoreContainer">
+    <EntitySet Name="AllPages" EntityType="Self.AllPages" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DistinctkGramsIndex" EntityType="Self.DistinctkGramsIndex" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DistinctSoundexIndex" EntityType="Self.DistinctSoundexIndex" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="InvertedIndex" EntityType="Self.InvertedIndex" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kGramIndex" EntityType="Self.kGramIndex" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SoundexIndex" EntityType="Self.SoundexIndex" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
